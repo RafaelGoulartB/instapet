@@ -8,6 +8,15 @@ export default function Feed() {
 
   return (
     <>
+      <Text> Feed </Text>
+
+      <TouchableOpacity
+        onPress={() => dispatch({
+          type: 'LOG_OUT'
+        })}
+        style={{marginTop: 18, borderColor:'black', borderWidth: 1}}>
+        <Text>Log out</Text>
+      </TouchableOpacity>
     </>
   );
 }
