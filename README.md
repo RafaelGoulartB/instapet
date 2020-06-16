@@ -1,4 +1,4 @@
-<h1 align="center">Insta</h1>
+<h1 align="center">InstaPet</h1>
 <p>
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/RafaelGoulartB/RandomNumberApp#readme">
