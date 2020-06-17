@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text } from 'react-native';
+import { Text, ActivityIndicator } from 'react-native';
 import * as firebase from 'firebase';
 
 import {
@@ -18,16 +18,24 @@ export default function Login({ navigation }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState();
+  const [processing, setProcessing] = useState(false);
 
-  async function handleFormRegister() {
+  function handleFormRegister() {
+    setProcessing(true)
     // Persist Login User
     firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
-      .then(function() {
-        // Login
-        firebase.auth().signInWithEmailAndPassword(email, password)
-          .catch(error => setError(JSON.stringify(error.message)))
+    .then(function() {
+      // Login
+      firebase.auth().signInWithEmailAndPassword(email, password)
+        .catch(error => {
+          setProcessing(false)
+          setError(JSON.stringify(error.message))
+        });
       })
-      .catch(error => setError("Error to login"));
+      .catch(error => {
+        setProcessing(false)
+        setError("Error to login")
+      });
     }
 
   return (
@@ -57,8 +65,9 @@ export default function Login({ navigation }) {
           secureTextEntry={true}
           autoCapitalize="none"
         />
+        {processing && <ActivityIndicator size="large" style={{marginBottom: 16}}/>}
         <ButtonForm onPress={handleFormRegister}>
-          <ButtonTextForm>Sign Up</ButtonTextForm>
+          <ButtonTextForm>Login</ButtonTextForm>
         </ButtonForm>
       </InputsContainer>
 

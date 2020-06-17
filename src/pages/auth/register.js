@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text } from 'react-native';
+import { Text, ActivityIndicator } from 'react-native';
 import * as firebase from 'firebase';
 
 import {
@@ -19,8 +19,10 @@ export default function SignUp({ navigation }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState();
+  const [processing, setProcessing] = useState(false);
 
-  async function handleFormRegister() {
+  function handleFormRegister() {
+    setProcessing(true)
     // Persist Created User
     firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
       .then(function() {
@@ -29,9 +31,15 @@ export default function SignUp({ navigation }) {
           .then(user =>
             firebase.auth().currentUser.updateProfile({ displayName: name })
           )
-          .catch(error => setError(JSON.stringify(error.message)))
+          .catch(error => {
+            setProcessing(false)
+            setError(JSON.stringify(error.message))
+          })
       })
-      .catch(error => setError("Error to create a new user"));
+      .catch(error => {
+        setProcessing(false)
+        setError("Error to create a new user")
+      });
     }
 
   return (
@@ -66,6 +74,7 @@ export default function SignUp({ navigation }) {
           secureTextEntry={true}
           autoCapitalize="none"
         />
+        {processing && <ActivityIndicator size="large" style={{marginBottom: 16}}/>}
         <ButtonForm onPress={handleFormRegister}>
           <ButtonTextForm>Sign Up</ButtonTextForm>
         </ButtonForm>
