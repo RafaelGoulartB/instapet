@@ -27,9 +27,7 @@ export default function Login({ navigation }) {
         firebase.auth().signInWithEmailAndPassword(email, password)
           .catch(error => setError(JSON.stringify(error.message)))
       })
-      .catch(function(error) {
-        setError("Erro ao criar o usuario");
-      });
+      .catch(error => setError("Error to login"));
     }
 
   return (

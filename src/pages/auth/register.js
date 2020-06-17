@@ -31,9 +31,7 @@ export default function SignUp({ navigation }) {
           )
           .catch(error => setError(JSON.stringify(error.message)))
       })
-      .catch(function(error) {
-        setError("Erro ao criar o usuario");
-      });
+      .catch(error => setError("Error to create a new user"));
     }
 
   return (
