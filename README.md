@@ -33,7 +33,8 @@ This project was made using the follow technologies:
 
 # :rocket: Features
 
-* Register and Sign in a User
+* Register and SignIn user with email and passoword using Firebase
+* Social login with Firebase (Google and Facebook)
 * Feed with posts
 * Profile Screen
 
