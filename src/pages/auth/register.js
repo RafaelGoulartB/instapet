@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from "react-redux";
-import { Text, AsyncStorage } from 'react-native';
+import { Text } from 'react-native';
 import * as firebase from 'firebase';
 
 import {
@@ -16,22 +16,20 @@ import {
 } from '../../styles';
 
 export default function SignUp({ navigation }) {
-  const dispatch = useDispatch();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState();
 
   async function handleFormRegister() {
-    if(!(name && email && password)) {
-      setError('Please, use correct information')
-      return;
-    }
     // Persist Created User
     firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
       .then(function() {
         // Create User
         firebase.auth().createUserWithEmailAndPassword(email, password)
+          .then(user =>
+            firebase.auth().currentUser.updateProfile({ displayName: name })
+          )
           .catch(error => setError(JSON.stringify(error.message)))
       })
       .catch(function(error) {
