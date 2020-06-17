@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from "react-redux";
 import { Text, AsyncStorage } from 'react-native';
-
-import { register } from '../../services/auth';
+import * as firebase from 'firebase';
 
 import {
   PageContainer,
@@ -28,21 +27,17 @@ export default function SignUp({ navigation }) {
       setError('Please, use correct information')
       return;
     }
-    try {
-      const response = await register();
-
-      await AsyncStorage.setItem('@insta:user', JSON.stringify(response.user));
-      await AsyncStorage.setItem('@insta:token', JSON.stringify(response.token));
-
-      dispatch({
-        type: 'LOG_IN',
-        token: response.token,
-        user: response.user
+    // Persist Created User
+    firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
+      .then(function() {
+        // Create User
+        firebase.auth().createUserWithEmailAndPassword(email, password)
+          .catch(error => setError(JSON.stringify(error.message)))
+      })
+      .catch(function(error) {
+        setError("Erro ao criar o usuario");
       });
-    } catch(error) {
-      console.log(error);
     }
-  };
 
   return (
     <PageContainer>
@@ -64,6 +59,9 @@ export default function SignUp({ navigation }) {
           placeholder="Email"
           onChangeText={text => setEmail(text)}
           value={email}
+          autoCapitalize="none"
+          autoCompleteType="email"
+          keyboardType="email-address"
         />
         <InputForm
           placeholder="Password"
@@ -71,6 +69,7 @@ export default function SignUp({ navigation }) {
           value={password}
           textContentType="password"
           secureTextEntry={true}
+          autoCapitalize="none"
         />
         <ButtonForm onPress={handleFormRegister}>
           <ButtonTextForm>Sign Up</ButtonTextForm>

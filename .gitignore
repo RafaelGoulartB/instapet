@@ -9,6 +9,8 @@ npm-debug.*
 *.orig.*
 web-build/
 web-report/
+google-services.json
+firebaseConfig.js
 
 # macOS
 .DS_Store

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "app",
-    "slug": "app",
+    "name": "Instapet",
+    "slug": "instapet",
     "platforms": [
       "ios",
       "android",
@@ -21,6 +21,9 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "android": {
+      "package": "com.rafaelgoulartb.instapet"
+    },
     "ios": {
       "supportsTablet": true
     }

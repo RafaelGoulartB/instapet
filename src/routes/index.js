@@ -1,41 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { useSelector, useDispatch } from "react-redux";
-import { AsyncStorage } from 'react-native';
+import * as firebase from 'firebase';
 
 import AuthRoutes from "./auth.routes";
 import AppRoutes from "./app.routes";
 import Loading from "../pages/loading";
 
 export default function Routes() {
-  const user = useSelector((state) => state.user);
-  const dispatch = useDispatch();
   const [loading, setLoading] = useState(true);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  useEffect(() => {
-    async function loadStorageData() {
-      const StorageUser = await AsyncStorage.getItem('@insta:user');
-      const StorageToken = await AsyncStorage.getItem('@insta:token');
-
-      if(StorageToken && StorageUser) {
-        dispatch({
-          type: 'LOG_IN',
-          token: StorageToken,
-          user: JSON.parse(StorageUser)
-        });
-      };
-      setLoading(false);
-    };
-
-    loadStorageData();
-  }, [])
-
+  firebase.auth().onAuthStateChanged(user => {
+    if (user) {
+      setIsAuthenticated(true)
+    } else {
+      setIsAuthenticated(false)
+    }
+    setLoading(false);
+  })
 
   return (
     <>
       <NavigationContainer>
         { loading ? <Loading /> :
-          user.token ? <AppRoutes /> : <AuthRoutes />
+          isAuthenticated ? <AppRoutes /> : <AuthRoutes />
         }
       </NavigationContainer>
     </>
