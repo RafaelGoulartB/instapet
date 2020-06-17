@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import * as firebase from 'firebase';
 
@@ -10,14 +10,17 @@ export default function Routes() {
   const [loading, setLoading] = useState(true);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  firebase.auth().onAuthStateChanged(user => {
-    if (user) {
-      setIsAuthenticated(true)
-    } else {
-      setIsAuthenticated(false)
-    }
-    setLoading(false);
-  })
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged(user => {
+      if (user) {
+        console.log(user)
+        setIsAuthenticated(true)
+      } else {
+        setIsAuthenticated(false)
+      }
+      setLoading(false);
+    })
+  }, [])
 
   return (
     <>
