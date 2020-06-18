@@ -80,10 +80,12 @@ export default function SignUp({ navigation }) {
         </ButtonForm>
       </InputsContainer>
 
-      <Text style={{margin: 16, fontFamily: 'Lato'}}>or</Text>
+      <Text style={{margin: 8, fontFamily: 'Lato'}}>or</Text>
 
 
       <SwitchForm onPress={() => navigation.push('Login')}>I already have a account</SwitchForm>
+
+      <SwitchForm onPress={() => navigation.push('ResetPassword')}>I forgot my Password</SwitchForm>
     </PageContainer>
   );
 }

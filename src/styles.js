@@ -64,5 +64,6 @@ export const SwitchForm = styled.Text`
   text-align: center;
   color: #9ba3bb;
   text-decoration: underline;
+  margin-top: 16px;
 `;
 
