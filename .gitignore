@@ -11,6 +11,7 @@ web-build/
 web-report/
 google-services.json
 firebaseConfig.js
+keystore.txt
 
 # macOS
 .DS_Store
