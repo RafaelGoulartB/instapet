@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "61951786572",
+    "firebase_url": "https://instagram-clone-f1f0c.firebaseio.com",
+    "project_id": "instagram-clone-f1f0c",
+    "storage_bucket": "instagram-clone-f1f0c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61951786572:android:813d6b94263a2ae8ac7ee9",
+        "android_client_info": {
+          "package_name": "com.instapet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61951786572-sto66jce68paskatjsi0cifse54u8qj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXIrPg08UWrDaHo4VFVgPplyky7hyIBO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61951786572-sto66jce68paskatjsi0cifse54u8qj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61951786572:android:b90c037f72d3c9a9ac7ee9",
+        "android_client_info": {
+          "package_name": "com.rntemplatefirebaselogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61951786572-sto66jce68paskatjsi0cifse54u8qj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXIrPg08UWrDaHo4VFVgPplyky7hyIBO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61951786572-sto66jce68paskatjsi0cifse54u8qj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
