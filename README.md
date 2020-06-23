@@ -27,7 +27,6 @@ This project was made using the follow technologies:
 <ul>
   <li><a href="https://reactnative.dev/">React Native</a></li>
   <li><a href="https://redux.js.org/introduction/getting-started">Redux</a></li>
-  <li><a href="https://expo.io/">Expo</a></li>
   <li><a href="https://eslint.org/">Eslint</a></li>
 </ul>
 
@@ -40,15 +39,13 @@ This project was made using the follow technologies:
 
 
 # :construction_worker: How to run
-To run the project you need a cellphone with the app of [expo](https://play.google.com/store/apps/details?id=host.exp.exponent) instaled or a emulator android/ios.
-<br />
-After, fork this repository and clone to your machine. Inside of the project's folder run the following commands:
 ```sh
-npm install
+yarn install
 
-npm start
+npx react-native start
+
+npx react-native run android
 ```
-Aferter read the QRCode with the app of [expo](https://play.google.com/store/apps/details?id=host.exp.exponent) or run on emulator.
 
 
 # :bug: Issues
