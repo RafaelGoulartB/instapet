@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 
-export const PageContainer = styled.View`
+export const PageContainer = styled.KeyboardAvoidingView`
   flex: 1px;
   padding-top: 20px;
   background-color: #feffff;
