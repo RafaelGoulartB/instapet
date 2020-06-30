@@ -5,7 +5,7 @@ import auth from '@react-native-firebase/auth';
 export default function Home() {
   return (
     <>
-      <Text> Hello World </Text>
+      <Text> Profile </Text>
 
       <TouchableOpacity
         onPress={async () => {
