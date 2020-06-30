@@ -1,7 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import FeatherIcons from 'react-native-vector-icons/Feather';
 
 import FeedPage from '../pages/feed';
 import SendPostPage from '../pages/sendPost';
@@ -13,20 +13,27 @@ const ProfileStack = createStackNavigator();
 const SendPostStack = createStackNavigator();
 const FeedStack = createStackNavigator();
 
+const headerStackStyle = {
+  backgroundColor: '#B70B0B',
+};
+
 const FeedStackScreen = () => (
-  <FeedStack.Navigator>
+  <FeedStack.Navigator
+    screenOptions={{headerTintColor: 'white', headerStyle: headerStackStyle}}>
     <FeedStack.Screen name="Feed" component={FeedPage} />
   </FeedStack.Navigator>
 );
 
 const SendPostStackScreen = () => (
-  <SendPostStack.Navigator>
+  <SendPostStack.Navigator
+    screenOptions={{headerTintColor: 'white', headerStyle: headerStackStyle}}>
     <SendPostStack.Screen name="Send" component={SendPostPage} />
   </SendPostStack.Navigator>
 );
 
 const ProfileStackScreen = () => (
-  <ProfileStack.Navigator>
+  <ProfileStack.Navigator
+    screenOptions={{headerTintColor: 'white', headerStyle: headerStackStyle}}>
     <ProfileStack.Screen name="Profile" component={ProfilePage} />
   </ProfileStack.Navigator>
 );
@@ -35,23 +42,40 @@ export default function AppRoutes() {
   return (
     <Tab.Navigator
       initialRouteName="Feed"
-      showLabel={false}
       tabBarOptions={{
-        activeTintColor: 'tomato',
-        inactiveTintColor: 'gray',
+        showLabel: false,
+        activeBackgroundColor: '#B70B0B',
+        inactiveBackgroundColor: '#B70B0B',
+        activeTintColor: '#ffff',
+        inactiveTintColor: '#B6B6B6',
       }}>
       <Tab.Screen
         name="Feed"
         component={FeedStackScreen}
         options={{
-          tabBarLabel: 'Home',
-          tabBarIcon: () => (
-            <MaterialCommunityIcons name="home" color={'#000'} size={20} />
+          tabBarIcon: ({color, size}) => (
+            <FeatherIcons name="home" size={24} color={color} />
           ),
         }}
       />
-      <Tab.Screen name="Send" component={SendPostStackScreen} />
-      <Tab.Screen name="Profile" component={ProfileStackScreen} />
+      <Tab.Screen
+        name="Send"
+        component={SendPostStackScreen}
+        options={{
+          tabBarIcon: ({color, size}) => (
+            <FeatherIcons name="plus-square" size={24} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Profile"
+        component={ProfileStackScreen}
+        options={{
+          tabBarIcon: ({color, size}) => (
+            <FeatherIcons name="user" size={24} color={color} />
+          ),
+        }}
+      />
     </Tab.Navigator>
   );
 }
