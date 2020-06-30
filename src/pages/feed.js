@@ -1,19 +1,13 @@
 import React from 'react';
-import {Text, TouchableOpacity} from 'react-native';
+import {ScrollView} from 'react-native';
 import auth from '@react-native-firebase/auth';
+import Post from '../components/posts';
 
 export default function Home() {
   return (
-    <>
-      <Text> Feed </Text>
-
-      <TouchableOpacity
-        onPress={async () => {
-          auth().signOut();
-        }}
-        style={{marginTop: 18, borderColor: 'black', borderWidth: 1}}>
-        <Text>Log out</Text>
-      </TouchableOpacity>
-    </>
+    <ScrollView>
+      <Post />
+      <Post />
+    </ScrollView>
   );
 }
