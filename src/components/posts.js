@@ -16,9 +16,8 @@ import {
 import FontAwesomeIcons from 'react-native-vector-icons/FontAwesome';
 import DogImage from '../assets/dog.jpeg';
 
-export default function Post() {
+export default function Post({post}) {
   const [comment, setComment] = useState();
-
   return (
     <PostContainer>
       <HeaderContainer>
@@ -37,7 +36,7 @@ export default function Post() {
         </ActionsBox>
       </HeaderContainer>
 
-      <PostImage source={DogImage} />
+      <PostImage source={{uri: post.imgUrl}} />
 
       <CommentsBox>
         <CommentsImage source={DogImage} />
