@@ -22,6 +22,10 @@
 * [Found a bug? Missing a specific feature?](#bug-issues)
 * [License](#closed_book-license)
 
+<div style="display: flex; flex-direction: "row";">
+  <img src="https://github.com/RafaelGoulartB/Instapet/blob/master/screenshots/feed.png" width="280">
+</div>
+
 # :computer: Technologies
 This project was made using the follow technologies:
 <ul>
