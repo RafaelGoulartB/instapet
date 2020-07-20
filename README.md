@@ -1,4 +1,7 @@
-<h1 align="center">InstaPet</h1>
+<p align="center">
+   <img src="https://github.com/RafaelGoulartB/Instapet/blob/master/.github/logo.png" width="150"/>
+</p>
+<h1 align="center">Instapet</h1>
 <p>
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/RafaelGoulartB/RandomNumberApp#readme">
@@ -23,7 +26,7 @@
 * [License](#closed_book-license)
 
 <div style="display: flex; flex-direction: "row";">
-  <img src="https://github.com/RafaelGoulartB/Instapet/blob/master/screenshots/feed.png" width="280">
+  <img src="https://github.com/RafaelGoulartB/Instapet/blob/master/.github/feed.png" width="280">
 </div>
 
 # :computer: Technologies
