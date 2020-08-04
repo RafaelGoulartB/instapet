@@ -2,20 +2,27 @@
    <img src="https://github.com/RafaelGoulartB/Instapet/blob/master/.github/logo.png" width="150"/>
 </p>
 <h1 align="center">Instapet</h1>
-<p>
-  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/RafaelGoulartB/RandomNumberApp#readme">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
+
+<p align="center">	
+   <a href="https://www.linkedin.com/in/rafael-goulartb/">
+      <img alt="Rafael Goulart" src="https://img.shields.io/badge/-RafaelGoulartB-B70B0B?style=flat&logo=Linkedin&logoColor=white" />
+   </a>
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/RafaelGoulartB/Instapet?color=B70B0B">
+
+  <img src="https://img.shields.io/badge/version-1.0.0-B70B0B.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/RafaelGoulartB/Instapet#readme">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-B70B0B.svg" target="_blank" />
   </a>
-  <a href="https://github.com/RafaelGoulartB/RandomNumberApp/graphs/commit-activity">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" target="_blank" />
-  </a>
-  <a href="https://github.com/RafaelGoulartB/RandomNumberApp/blob/master/LICENSE">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
-  </a>
+   <a href="https://github.com/RafaelGoulartB/Instapet/commits/master">
+      <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/RafaelGoulartB/Instapet?color=B70B0B">
+  </a> 
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-B70B0B">
+   <a href="https://github.com/RafaelGoulartB/Instapet/stargazers">
+      <img alt="Stargazers" src="https://img.shields.io/github/stars/RafaelGoulartB/Instapet?color=B70B0B&logo=github">
+   </a>
 </p>
 
-> React-Native - A based on instagram app developed to learn how to build a social network
+> A React-Native app - Based on instagram app developed to learn how to build a social network
 
 # :pushpin: Table of Contents
 
@@ -23,6 +30,7 @@
 * [Features](#rocket-features)
 * [How to Run](#construction_worker-how-to-run)
 * [Found a bug? Missing a specific feature?](#bug-issues)
+* [Contributing](#tada-contributing)
 * [License](#closed_book-license)
 
 <div style="display: flex; flex-direction: "row";">
@@ -47,10 +55,13 @@ This project was made using the follow technologies:
 
 # :construction_worker: How to run
 ```sh
+# Install Dependencies
 yarn install
 
+# Start the Server
 npx react-native start
 
+# Run on Android emulator
 npx react-native run android
 ```
 
@@ -58,6 +69,10 @@ npx react-native run android
 # :bug: Issues
 
 Feel free to **file a new issue** with a respective title and description on the the [Insta](https://github.com/RafaelGoulartB/RandomApp/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**!
+
+# :tada: Contributing
+
+Check out the [contributing](https://github.com/RafaelGoulartB/Instapet/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
 
 # :closed_book: License
 
