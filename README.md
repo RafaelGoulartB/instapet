@@ -24,6 +24,16 @@
 
 > A React-Native app - Based on instagram app developed to learn how to build a social network
 
+<div align="center">
+  <sub>The instapet project. Built with ❤︎ by
+    <a href="https://github.com/RafaelGoulartB">Rafael Goulart</a> and
+    <a href="https://github.com/RafaelGoulartB/Instapet/graphs/contributors">
+      contributors
+    </a>
+  </sub>
+</div>
+
+
 # :pushpin: Table of Contents
 
 * [Technologies](#computer-technologies)
