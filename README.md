@@ -1,4 +1,4 @@
-<h1 align="center" style="color: #962fbf;">Instapet</h1>
+<h1 align="center">INSTAPET</h1>
 
 <p align="center">	
    <a href="https://www.linkedin.com/in/rafael-goulartb/">
@@ -55,10 +55,10 @@
 # :computer: Technologies
 This project was made using the follow technologies:
 
-[React Native](https://reactnative.dev/)
-[Firebase](https://firebase.google.com/)
-[Redux](https://redux.js.org/)
-[Eslint](https://eslint.org/)
+[React Native](https://reactnative.dev/)   
+[Firebase](https://firebase.google.com/)   
+[Redux](https://redux.js.org/)   
+[Eslint](https://eslint.org/)  
 
 # :rocket: Features
 
