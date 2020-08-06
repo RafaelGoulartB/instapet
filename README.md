@@ -2,8 +2,6 @@
    <img src="https://github.com/RafaelGoulartB/Instapet/blob/master/.github/logo.png" alt="Proffy" width="250"/>
 </p>
 
-<h1 align="center">Instapet</h1>
-
 <p align="center">	
    <a href="https://www.linkedin.com/in/rafael-goulartb/">
       <img alt="Rafael Goulart" src="https://img.shields.io/badge/-RafaelGoulartB-fa7e1e?style=flat&logo=Linkedin&logoColor=white" />
