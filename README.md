@@ -1,25 +1,29 @@
-<h1 align="center">INSTAPET</h1>
+<p align="center">
+   <img src="https://github.com/RafaelGoulartB/Instapet/blob/master/.github/logo.png" alt="Proffy" width="250"/>
+</p>
+
+<h1 align="center">Instapet</h1>
 
 <p align="center">	
    <a href="https://www.linkedin.com/in/rafael-goulartb/">
-      <img alt="Rafael Goulart" src="https://img.shields.io/badge/-RafaelGoulartB-962fbf?style=flat&logo=Linkedin&logoColor=white" />
+      <img alt="Rafael Goulart" src="https://img.shields.io/badge/-RafaelGoulartB-fa7e1e?style=flat&logo=Linkedin&logoColor=white" />
    </a>
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/RafaelGoulartB/Instapet?color=962fbf">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/RafaelGoulartB/Instapet?color=fa7e1e">
 
-  <img src="https://img.shields.io/badge/version-1.0.0-962fbf.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/version-1.0.0-fa7e1e.svg?cacheSeconds=2592000" />
   <a href="https://github.com/RafaelGoulartB/Instapet#readme">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-962fbf.svg" target="_blank" />
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-fa7e1e.svg" target="_blank" />
   </a>
    <a href="https://github.com/RafaelGoulartB/Instapet/commits/master">
-      <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/RafaelGoulartB/Instapet?color=962fbf">
+      <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/RafaelGoulartB/Instapet?color=fa7e1e">
   </a> 
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-962fbf">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-fa7e1e">
    <a href="https://github.com/RafaelGoulartB/Instapet/stargazers">
-      <img alt="Stargazers" src="https://img.shields.io/github/stars/RafaelGoulartB/Instapet?color=962fbf&logo=github">
+      <img alt="Stargazers" src="https://img.shields.io/github/stars/RafaelGoulartB/Instapet?color=fa7e1e&logo=github">
    </a>
 </p>
 
-> A React-Native app - Based on instagram app developed to learn how to build a social network
+> **Instapet** is a app based on instagram, app developed to learn how to build a social network using React-native and Firebase
 
 
 <p align="center">
