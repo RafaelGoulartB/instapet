@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="https://github.com/RafaelGoulartB/Instapet/blob/master/.github/logo.png" alt="Proffy" width="250"/>
+   <img src="./.github/logo.png" alt="Proffy" width="250"/>
 </p>
 
 <p align="center">	
