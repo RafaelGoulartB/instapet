@@ -24,6 +24,13 @@
 
 > A React-Native app - Based on instagram app developed to learn how to build a social network
 
+
+<p align="center">
+    <a href="README.md">English</a>
+    ·
+    <a href="README-pt.md">Portuguese</a>
+ </p>
+
 <div align="center">
   <sub>The instapet project. Built with ❤︎ by
     <a href="https://github.com/RafaelGoulartB">Rafael Goulart</a> and
