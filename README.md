@@ -4,20 +4,20 @@
 
 <p align="center">	
    <a href="https://www.linkedin.com/in/rafael-goulartb/">
-      <img alt="Rafael Goulart" src="https://img.shields.io/badge/-RafaelGoulartB-feda75?style=flat&logo=Linkedin&logoColor=white" />
+      <img alt="Rafael Goulart" src="https://img.shields.io/badge/-RafaelGoulartB-962fbf?style=flat&logo=Linkedin&logoColor=white" />
    </a>
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/RafaelGoulartB/Instapet?color=feda75">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/RafaelGoulartB/Instapet?color=962fbf">
 
-  <img src="https://img.shields.io/badge/version-1.0.0-feda75.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/version-1.0.0-962fbf.svg?cacheSeconds=2592000" />
   <a href="https://github.com/RafaelGoulartB/Instapet#readme">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-feda75.svg" target="_blank" />
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-962fbf.svg" target="_blank" />
   </a>
    <a href="https://github.com/RafaelGoulartB/Instapet/commits/master">
-      <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/RafaelGoulartB/Instapet?color=feda75">
+      <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/RafaelGoulartB/Instapet?color=962fbf">
   </a> 
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-fa7e1e">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-962fbf">
    <a href="https://github.com/RafaelGoulartB/Instapet/stargazers">
-      <img alt="Stargazers" src="https://img.shields.io/github/stars/RafaelGoulartB/Instapet?color=feda75&logo=github">
+      <img alt="Stargazers" src="https://img.shields.io/github/stars/RafaelGoulartB/Instapet?color=962fbf&logo=github">
    </a>
 </p>
 
