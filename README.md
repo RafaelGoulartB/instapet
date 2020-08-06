@@ -1,24 +1,21 @@
-<p align="center">
-   <img src="https://github.com/RafaelGoulartB/Instapet/blob/master/.github/logo.png" width="150"/>
-</p>
-<h1 align="center">Instapet</h1>
+<h1 align="center" style="color: #962fbf;">Instapet</h1>
 
 <p align="center">	
    <a href="https://www.linkedin.com/in/rafael-goulartb/">
-      <img alt="Rafael Goulart" src="https://img.shields.io/badge/-RafaelGoulartB-B70B0B?style=flat&logo=Linkedin&logoColor=white" />
+      <img alt="Rafael Goulart" src="https://img.shields.io/badge/-RafaelGoulartB-962fbf?style=flat&logo=Linkedin&logoColor=white" />
    </a>
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/RafaelGoulartB/Instapet?color=B70B0B">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/RafaelGoulartB/Instapet?color=962fbf">
 
-  <img src="https://img.shields.io/badge/version-1.0.0-B70B0B.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/version-1.0.0-962fbf.svg?cacheSeconds=2592000" />
   <a href="https://github.com/RafaelGoulartB/Instapet#readme">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-B70B0B.svg" target="_blank" />
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-962fbf.svg" target="_blank" />
   </a>
    <a href="https://github.com/RafaelGoulartB/Instapet/commits/master">
-      <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/RafaelGoulartB/Instapet?color=B70B0B">
+      <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/RafaelGoulartB/Instapet?color=962fbf">
   </a> 
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-B70B0B">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-962fbf">
    <a href="https://github.com/RafaelGoulartB/Instapet/stargazers">
-      <img alt="Stargazers" src="https://img.shields.io/github/stars/RafaelGoulartB/Instapet?color=B70B0B&logo=github">
+      <img alt="Stargazers" src="https://img.shields.io/github/stars/RafaelGoulartB/Instapet?color=962fbf&logo=github">
    </a>
 </p>
 
@@ -50,17 +47,18 @@
 * [Contributing](#tada-contributing)
 * [License](#closed_book-license)
 
-<div style="display: flex; flex-direction: "row";">
-  <img src="https://github.com/RafaelGoulartB/Instapet/blob/master/.github/feed.png" width="280">
+### Screenshots
+<div style="display: flex; flex-direction: 'row';">
+  <img src="./.github/feed.png" width="280">
 </div>
 
 # :computer: Technologies
 This project was made using the follow technologies:
-<ul>
-  <li><a href="https://reactnative.dev/">React Native</a></li>
-  <li><a href="https://redux.js.org/introduction/getting-started">Redux</a></li>
-  <li><a href="https://eslint.org/">Eslint</a></li>
-</ul>
+
+[React Native](https://reactnative.dev/)
+[Firebase](https://firebase.google.com/)
+[Redux](https://redux.js.org/)
+[Eslint](https://eslint.org/)
 
 # :rocket: Features
 
@@ -89,14 +87,14 @@ Feel free to **file a new issue** with a respective title and description on the
 
 # :tada: Contributing
 
-Check out the [contributing](https://github.com/RafaelGoulartB/Instapet/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
+Check out the [contributing](./CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
 
 # :closed_book: License
 
 Released in 2020 :closed_book: License
 
 Made with love by [Rafael Goulart](https://github.com/RandomApp) 🚀.
-This project is under the [MIT license](https://github.com/RafaelGoulartB/RandomApp/master/LICENSE).
+This project is under the [MIT license](./LICENSE).
 
 
 Give a ⭐️ if this project helped you!
