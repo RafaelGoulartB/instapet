@@ -57,10 +57,10 @@
 # :computer: Technologies
 This project was made using the follow technologies:
 
-[React Native](https://reactnative.dev/)   
-[Firebase](https://firebase.google.com/)   
-[Redux](https://redux.js.org/)   
-[Eslint](https://eslint.org/)  
+* [React Native](https://reactnative.dev/)   
+* [Firebase](https://firebase.google.com/)   
+* [Redux](https://redux.js.org/)   
+* [Eslint](https://eslint.org/)  
 
 # :rocket: Features
 
