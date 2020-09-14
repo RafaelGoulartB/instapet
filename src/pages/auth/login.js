@@ -17,7 +17,7 @@ import {
 export default function Login({navigation}) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState();
+  const [errorMsg, setErrorMsg] = useState();
   const [processing, setProcessing] = useState(false);
 
   function handleFormRegister() {
@@ -26,7 +26,7 @@ export default function Login({navigation}) {
       .signInWithEmailAndPassword(email, password)
       .catch(error => {
         setProcessing(false);
-        setError(JSON.stringify(error.message));
+        setErrorMsg(JSON.stringify(error.message));
       });
   }
 
@@ -34,9 +34,9 @@ export default function Login({navigation}) {
     <PageContainer>
       <LogoForm>Login</LogoForm>
 
-      {error && (
+      {errorMsg && (
         <ErrorBox>
-          <ErrorText>{error}</ErrorText>
+          <ErrorText>{errorMsg}</ErrorText>
         </ErrorBox>
       )}
 

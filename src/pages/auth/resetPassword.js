@@ -16,7 +16,7 @@ import {
 
 export default function ResetPassword({navigation}) {
   const [email, setEmail] = useState('');
-  const [error, setError] = useState();
+  const [errorMsg, setErrorMsg] = useState();
   const [processing, setProcessing] = useState(false);
 
   function handlePress() {
@@ -38,9 +38,9 @@ export default function ResetPassword({navigation}) {
     <PageContainer>
       <LogoForm>Forgot Password</LogoForm>
 
-      {error && (
+      {errorMsg && (
         <ErrorBox>
-          <ErrorText>{error}</ErrorText>
+          <ErrorText>{errorMsg}</ErrorText>
         </ErrorBox>
       )}
 

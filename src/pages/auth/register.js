@@ -18,7 +18,7 @@ export default function SignUp({navigation}) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState();
+  const [errorMsg, setErrorMsg] = useState();
   const [processing, setProcessing] = useState(false);
 
   function handleFormRegister() {
@@ -28,7 +28,7 @@ export default function SignUp({navigation}) {
       .then(user => auth().currentUser.updateProfile({displayName: name}))
       .catch(error => {
         setProcessing(false);
-        setError(JSON.stringify(error.message));
+        setErrorMsg(JSON.stringify(error.message));
       });
   }
 
@@ -36,9 +36,9 @@ export default function SignUp({navigation}) {
     <PageContainer>
       <LogoForm>Sign Up</LogoForm>
 
-      {error && (
+      {errorMsg && (
         <ErrorBox>
-          <ErrorText>{error}</ErrorText>
+          <ErrorText>{errorMsg}</ErrorText>
         </ErrorBox>
       )}
 
