@@ -5,11 +5,13 @@ export const PostContainer = styled.View`
 `;
 
 export const HeaderContainer = styled.View`
+  width: 95%;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 24px;
-  padding-right: 24px;
+  align-self: center;
+  padding-left: 8px;
+  padding-right: 8px;
   margin-bottom: 12px;
 `;
 export const ProfileBox = styled.View`
@@ -37,33 +39,27 @@ export const PostImage = styled.Image`
   height: 280px;
 `;
 
-export const CommentsBox = styled.KeyboardAvoidingView`
-  width: 100%;
-  margin-top: 12px;
+export const CommentsInputBox = styled.View`
+  width: 90%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 24px;
-  padding-right: 24px;
-`;
-export const CommentsImage = styled.Image`
-  width: 36px;
-  height: 36px;
-  border-radius: 18px;
-`;
-export const CommentsInputBox = styled.View`
-  width: 90%;
-  margin-left: 12px;
-  flex-direction: row;
-  align-items: center;
+  align-self: center;
+
+  margin-top: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+
   border-width: 1px;
   border-color: #9ba3bb;
   border-style: solid;
   border-radius: 8px;
 `;
 export const CommentsInput = styled.TextInput`
-  width: 90%;
   max-height: 36px;
   font-size: 12px;
-  padding-left: 16px;
+  padding-left: 12px;
+`;
+export const CommentSendBtn = styled.TouchableOpacity`
+  padding-right: 12px;
 `;
