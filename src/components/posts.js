@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {TouchableOpacity} from 'react-native';
 import {
   PostContainer,
   HeaderContainer,
@@ -8,10 +7,9 @@ import {
   ProfileText,
   ActionsBox,
   PostImage,
-  CommentsBox,
-  CommentsImage,
   CommentsInputBox,
   CommentsInput,
+  CommentSendBtn,
 } from './posts.styles';
 import FontAwesomeIcons from 'react-native-vector-icons/FontAwesome';
 import DogImage from '../assets/dog.jpeg';
@@ -38,19 +36,16 @@ export default function Post({post}) {
 
       <PostImage source={{uri: post.imgUrl}} />
 
-      <CommentsBox>
-        <CommentsImage source={DogImage} />
-        <CommentsInputBox>
-          <CommentsInput
-            placeholder="Say Something"
-            value={comment}
-            onChangeText={text => setComment(text)}
-          />
-          <TouchableOpacity>
-            <FontAwesomeIcons name="send-o" color="#000" size={20} />
-          </TouchableOpacity>
-        </CommentsInputBox>
-      </CommentsBox>
+      <CommentsInputBox>
+        <CommentsInput
+          placeholder="Say Something"
+          value={comment}
+          onChangeText={text => setComment(text)}
+        />
+        <CommentSendBtn>
+          <FontAwesomeIcons name="send-o" color="#000" size={20} />
+        </CommentSendBtn>
+      </CommentsInputBox>
     </PostContainer>
   );
 }
